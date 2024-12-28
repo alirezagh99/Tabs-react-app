@@ -21,9 +21,9 @@ function App() {
       {isLoading ? (
         <p className="font-semibold text-2xl m-10">Loading...</p>
       ) : (
-        <div className="w-2/3 m-auto mt-10 border flex flex-col lg:flex-row p-3 gap-5">
+        <div className="w-2/3 m-auto mt-10 flex flex-col lg:flex-row p-3 gap-5">
+          <BtnContainer jobs={jobs} />
           <JobInfo />
-          <BtnContainer />
         </div>
       )}
     </>
