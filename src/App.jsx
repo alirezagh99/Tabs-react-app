@@ -23,7 +23,7 @@ function App() {
       ) : (
         <div className="w-2/3 m-auto mt-10 flex flex-col lg:flex-row p-3 gap-5">
           <BtnContainer jobs={jobs} />
-          <JobInfo />
+          <JobInfo jobs={jobs} />
         </div>
       )}
     </>
