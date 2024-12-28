@@ -1,8 +1,8 @@
 import React from "react";
 import DutyItem from "./DutyItem";
 import { v4 as uuidv4 } from "uuid";
-function JobInfo({ jobs }) {
-  const { company, title, duties, dates } = jobs[0];
+function JobInfo({ jobs, currItem }) {
+  const { company, title, duties, dates } = jobs[currItem];
   return (
     <div>
       <h2 className="text-3xl text-[rgba(0,0,0,0.8)] mb-2">{title}</h2>
